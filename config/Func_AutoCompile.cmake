@@ -82,6 +82,9 @@ if ( IS_COMPILE_EXE )
     message("${Yellow}Install Executable: ${White}${INSTALL_NAME}${Green}\n")
     add_executable( ${INSTALL_NAME} ${INSTALL_SRC} )
 
+    set_target_properties(${INSTALL_NAME}
+        PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${INSTALL_PATH})
+
 elseif( IS_COMPILE_LIB )
 
     if ( IS_DYNAMIC_LIB )
@@ -91,6 +94,12 @@ elseif( IS_COMPILE_LIB )
         message("${Yellow}Install Static Library: ${White}${INSTALL_NAME}${Green}\n")
         add_library(${INSTALL_NAME} STATIC ${INSTALL_SRC})
     endif()
+
+    set_target_properties(${INSTALL_NAME}
+        PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${INSTALL_PATH})
+
+    set_target_properties(${INSTALL_NAME}
+        PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${INSTALL_PATH})
 
 else()
 
