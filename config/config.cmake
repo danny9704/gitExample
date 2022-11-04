@@ -44,7 +44,7 @@ set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_COMPILE_PATH}/bin )
 set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_COMPILE_PATH}/lib )
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_COMPILE_PATH}/lib )
 ##... Fortran Module Header File Output Path
-set( CMAKE_Fortran_MODULE_DIRECTORY ${PROJECT_COMPILE_PATH}/include )
+set( CMAKE_Fortran_MODULE_DIRECTORY ${PROJECT_COMPILE_PATH}/lib )
 
 ## Git ---------------------------------------------------------------------- ##
 
