@@ -65,12 +65,12 @@ message("  - ${Green}Global Flag       ${White}: ${CMAKE_Fortran_FLAGS} ${Green}
 message("${ColourReset}")
 ## Compile Library ---------------------------------------------------------- ##
 
-#set(COMPILE_DYNAMIC_LIB False)
-set(COMPILE_DYNAMIC_LIB True)
+set(COMPILE_DYNAMIC_LIB False)
+# set(COMPILE_DYNAMIC_LIB True)
 
-#... Library 1
+#... Library FortranOOP
 set(PROJ_TYPE "LIB")
-set(PROJ_NAME lib1)
+set(PROJ_NAME FortranOOP)
 set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
 # set(${PROJ_TYPE}_PATH_${PROJ_NAME} )
 # set(${PROJ_TYPE}_DEPEND_${PROJ_NAME})
@@ -79,41 +79,6 @@ set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
 # set(${PROJ_TYPE}_EXTFLAG_app1 )
 add_subdirectory(src/${PROJ_NAME})
 
-#... Library 2
-set(PROJ_TYPE "LIB")
-set(PROJ_NAME lib2)
-set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
-# set(${PROJ_TYPE}_PATH_${PROJ_NAME} )
-set(${PROJ_TYPE}_DEPEND_${PROJ_NAME} lib1)
-# set(${PROJ_TYPE}_EXTLIB_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTINC_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTFLAG_app1 )
-add_subdirectory(src/${PROJ_NAME})
-
-## Compile Test Programs ---------------------------------------------------- ##
-
-#... Test 1
-set(PROJ_TYPE "TEST")
-set(PROJ_NAME testLib1)
-set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
-# set(${PROJ_TYPE}_PATH_${PROJ_NAME} )
-set(${PROJ_TYPE}_DEPEND_${PROJ_NAME} lib1)
-# set(${PROJ_TYPE}_EXTLIB_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTINC_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTFLAG_app1 )
-add_subdirectory(tests/${PROJ_NAME})
-
-#... Test 2
-set(PROJ_TYPE "TEST")
-set(PROJ_NAME testLib2)
-set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
-# set(${PROJ_TYPE}_PATH_${PROJ_NAME} )
-set(${PROJ_TYPE}_DEPEND_${PROJ_NAME} lib1 lib2)
-# set(${PROJ_TYPE}_EXTLIB_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTINC_${PROJ_NAME})
-# set(${PROJ_TYPE}_EXTFLAG_app1 )
-add_subdirectory(tests/${PROJ_NAME})
-
 ## Compile Applications ----------------------------------------------------- ##
 
 #... Application 1
@@ -121,7 +86,7 @@ set(PROJ_TYPE "APP")
 set(PROJ_NAME app1)
 set(${PROJ_TYPE}_NAME_${PROJ_NAME} ${PROJ_NAME})
 # set(${PROJ_TYPE}_PATH_${PROJ_NAME} )
-set(${PROJ_TYPE}_DEPEND_${PROJ_NAME} lib1 lib2)
+set(${PROJ_TYPE}_DEPEND_${PROJ_NAME} FortranOOP )
 # set(${PROJ_TYPE}_EXTLIB_${PROJ_NAME})
 # set(${PROJ_TYPE}_EXTINC_${PROJ_NAME})
 # set(${PROJ_TYPE}_EXTFLAG_app1 )

@@ -1,10 +1,11 @@
 SET(ITEM_PREFIX "LIB")
-SET(ITEM_NAME   "lib1")
+SET(ITEM_NAME   "FortranOOP")
 
 set(${ITEM_PREFIX}_SRC_${ITEM_NAME}
     ##.... Wrapper Module of EaFort
-    src/glbLib1.F90
-    src/pkgLib1.F90
+    src/glbFortranOOP.F90
+    src/pkgFortranOOP.F90
+    src/modGeometry.F90
 )
 
 ##... Compile

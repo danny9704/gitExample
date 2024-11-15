@@ -5,10 +5,18 @@ Program app1
 !! -------------------------------------------------------------------------- !!
 Implicit None
 !! -------------------------------------------------------------------------- !!
+    Type(typShape) :: shape1
+    Character(len=:), Allocatable :: shape1Color
+    Logical :: shape1Filled
 
-    Call Run_Lib1()
+    shape1%color = "red"
+    shape1%filled = .TRUE.
 
-    Call Run_Lib2()
+    Call shape1%GetColor( shape1Color )
+    shape1Filled = shape1%IsFilled()
+
+    write(*,*) "Shape1 Color : ", shape1Color
+    write(*,*) "Shape1 Filled: ", shape1Filled
 
 !! -------------------------------------------------------------------------- !!
 End Program
