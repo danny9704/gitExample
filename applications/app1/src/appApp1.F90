@@ -5,7 +5,16 @@ Program app1
 !! -------------------------------------------------------------------------- !!
 Implicit None
 !! -------------------------------------------------------------------------- !!
-    
+program main
+    use convert_library
+    implicit none
+ 
+    call convert_pat_to_hst()
+ 
+    print *, 'File conversion from Semi.pat to Semi.hst completed successfully.'
+ end program main
+ 
+ 
 !! -------------------------------------------------------------------------- !!
 End Program
 !! -------------------------------------------------------------------------- !!
