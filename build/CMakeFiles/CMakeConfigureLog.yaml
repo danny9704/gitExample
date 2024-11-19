@@ -460,3 +460,185 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineFortranCompiler.cmake:190 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (enable_language)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      
+      Microsoft Visual Studio 2022 버전 17.9.2.
+      Copyright (C) Microsoft Corp. All rights reserved.
+      
+      오류입니다. (예외가 발생한 HRESULT: 0x8000FFFF (E_UNEXPECTED))
+      작업을 완료할 수 없습니다. 매개 변수가 틀립니다. 
+      
+      사용법:
+      devenv  [solutionfile | projectfile | folder | anyfile.ext]  [switches]
+      
+      devenv의 첫 번째 인수는 일반적으로 솔루션 파일, 프로젝트 파일 또는 폴더입니다.
+      다음을 사용할 수도 있습니다. 다른 파일이 자동으로 열리게 하려면 해당 파일을 첫째 인수로
+      사용할 수도 있습니다. 프로젝트 파일을 입력하면 IDE에서
+      프로젝트 파일의 부모 디렉터리에서 프로젝트 파일과
+      기본 이름이 같은 .sln 파일을 찾습니다. 그러한 .sln 파일이 없으면
+      IDE는 프로젝트를 참조하는 단일 .sln 파일을 찾습니다.
+      단일 .sln 파일도 없으면 IDE는 프로젝트 파일과 기본 이름이 같은 기본 .sln
+      파일 이름을 사용하여 저장되지 않은 솔루션을 만듭니다.
+      
+      명령줄 빌드:
+      devenv solutionfile.sln /build [ solutionconfig ] [ /project projectnameorfile [ /projectconfig name ] ]
+      사용 가능한 명령줄 스위치:
+      
+      /Build			지정한 솔루션 구성으로 솔루션이나 프로젝트를
+      			빌드합니다. "Debug"를 예로 들 수 있습니다. 여러 플랫폼을
+      			사용할 수 있으면 구성 이름에 플랫폼 이름을 명시하고
+      			따옴표로 묶어야 합니다(예: "Debug|Win32").
+      /Clean			빌드 출력을 삭제합니다.
+      /Command		IDE를 시작하고 명령을 실행합니다.
+      /Deploy			지정한 빌드 구성을 빌드하여 배포합니다.
+      /DoNotLoadProjects	모든 프로젝트를 로드하지 않고 지정된 솔루션을 엽니다.
+      /Edit			이 애플리케이션의 실행 중인 인스턴스에서 지정한 파일을 엽니다.
+      			실행 중인 인스턴스가 없으면 단순화된 창 레이아웃을 사용하여
+      			새 인스턴스를 시작합니다.
+      /LCID			IDE에서 UI에 대한 기본 언어를 설정합니다.
+      /Log			문제 해결을 위해 IDE 동작을 지정한 파일에 기록합니다.
+      /NoVSIP			VSIP 테스트용 VSIP 개발자 라이선스 키를 사용할 수 없게 합니다.
+      /Out			빌드 로그를 지정한 파일에 추가합니다.
+      /Project		빌드, 정리 또는 배포할 프로젝트를 지정합니다.
+      			/Build, /Rebuild, /Clean 또는 /Deploy와 함께 사용해야 합니다.
+      /ProjectConfig		솔루션 구성에 지정된 프로젝트 구성을 
+      			재정의합니다. "Debug"를 예로 들 수 있습니다. 여러 플랫폼을
+      			사용할 수 있으면 구성 이름에 플랫폼 이름을 명시하고
+      			따옴표로 묶어야 합니다(예: "Debug|Win32").
+      			/Project와 함께 사용해야 합니다.
+      /Rebuild		지정한 구성으로 솔루션이나 프로젝트를
+      			정리하고 빌드합니다.
+      /ResetSettings		IDE의 기본 설정을 복원합니다. 필요한 경우 사용자가 지정한
+      			VSSettings 파일로 다시 설정할 수 있습니다.
+      /ResetSkipPkgs		VSPackages에 추가된 모든 SkipLoading 태그를 지웁니다.
+      /Run			지정한 솔루션을 컴파일하고 실행합니다.
+      /RunExit		지정한 솔루션을 컴파일하고 실행한 다음, IDE를 닫습니다.
+      /SafeMode		최소 창을 로드하는 안전 모드에서 IDE를 시작합니다.
+      /Upgrade		프로젝트 또는 솔루션과 그 안에 포함된 모든 프로젝트를 업그레이드합니다.
+      			이러한 파일의 백업은 적절히 만들어집니다.
+      			백업 프로세스에 대한 자세한 내용은 'Visual Studio 변환 마법사'
+      			도움말을 참조하세요.
+      
+      제품별 스위치:
+      
+      /debugexe	지정한 실행 파일을 디버깅하도록 엽니다.
+      		명령줄의 나머지가 이 실행 파일에 인수로 전달됩니다.
+      /diff		두 파일을 비교합니다. 4개의 매개 변수가 필요합니다.
+      		SourceFile, TargetFile, SourceDisplayName(선택 사항),
+      		TargetDisplayName(선택 사항)
+      /TfsLink	팀 탐색기를 열고 입력한 아티팩트 URI에 대해 
+      		뷰어를 시작합니다(등록된 경우).
+      /useenv		VC++ 빌드에 IDE 경로 대신
+      		PATH, INCLUDE, LIBPATH 및 LIB 환경 변수를 사용합니다.
+      
+      명령줄에서 디버거를 연결하려면 다음 명령을 사용하세요. 
+      	VsJITDebugger.exe -p <pid>
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineFortranCompiler.cmake:190 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:24 (enable_language)"
+    message: |
+      Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" failed.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      
+      Microsoft Visual Studio 2022 버전 17.9.2.
+      Copyright (C) Microsoft Corp. All rights reserved.
+      
+      오류입니다. (예외가 발생한 HRESULT: 0x8000FFFF (E_UNEXPECTED))
+      작업을 완료할 수 없습니다. 매개 변수가 틀립니다. 
+      
+      사용법:
+      devenv  [solutionfile | projectfile | folder | anyfile.ext]  [switches]
+      
+      devenv의 첫 번째 인수는 일반적으로 솔루션 파일, 프로젝트 파일 또는 폴더입니다.
+      다음을 사용할 수도 있습니다. 다른 파일이 자동으로 열리게 하려면 해당 파일을 첫째 인수로
+      사용할 수도 있습니다. 프로젝트 파일을 입력하면 IDE에서
+      프로젝트 파일의 부모 디렉터리에서 프로젝트 파일과
+      기본 이름이 같은 .sln 파일을 찾습니다. 그러한 .sln 파일이 없으면
+      IDE는 프로젝트를 참조하는 단일 .sln 파일을 찾습니다.
+      단일 .sln 파일도 없으면 IDE는 프로젝트 파일과 기본 이름이 같은 기본 .sln
+      파일 이름을 사용하여 저장되지 않은 솔루션을 만듭니다.
+      
+      명령줄 빌드:
+      devenv solutionfile.sln /build [ solutionconfig ] [ /project projectnameorfile [ /projectconfig name ] ]
+      사용 가능한 명령줄 스위치:
+      
+      /Build			지정한 솔루션 구성으로 솔루션이나 프로젝트를
+      			빌드합니다. "Debug"를 예로 들 수 있습니다. 여러 플랫폼을
+      			사용할 수 있으면 구성 이름에 플랫폼 이름을 명시하고
+      			따옴표로 묶어야 합니다(예: "Debug|Win32").
+      /Clean			빌드 출력을 삭제합니다.
+      /Command		IDE를 시작하고 명령을 실행합니다.
+      /Deploy			지정한 빌드 구성을 빌드하여 배포합니다.
+      /DoNotLoadProjects	모든 프로젝트를 로드하지 않고 지정된 솔루션을 엽니다.
+      /Edit			이 애플리케이션의 실행 중인 인스턴스에서 지정한 파일을 엽니다.
+      			실행 중인 인스턴스가 없으면 단순화된 창 레이아웃을 사용하여
+      			새 인스턴스를 시작합니다.
+      /LCID			IDE에서 UI에 대한 기본 언어를 설정합니다.
+      /Log			문제 해결을 위해 IDE 동작을 지정한 파일에 기록합니다.
+      /NoVSIP			VSIP 테스트용 VSIP 개발자 라이선스 키를 사용할 수 없게 합니다.
+      /Out			빌드 로그를 지정한 파일에 추가합니다.
+      /Project		빌드, 정리 또는 배포할 프로젝트를 지정합니다.
+      			/Build, /Rebuild, /Clean 또는 /Deploy와 함께 사용해야 합니다.
+      /ProjectConfig		솔루션 구성에 지정된 프로젝트 구성을 
+      			재정의합니다. "Debug"를 예로 들 수 있습니다. 여러 플랫폼을
+      			사용할 수 있으면 구성 이름에 플랫폼 이름을 명시하고
+      			따옴표로 묶어야 합니다(예: "Debug|Win32").
+      			/Project와 함께 사용해야 합니다.
+      /Rebuild		지정한 구성으로 솔루션이나 프로젝트를
+      			정리하고 빌드합니다.
+      /ResetSettings		IDE의 기본 설정을 복원합니다. 필요한 경우 사용자가 지정한
+      			VSSettings 파일로 다시 설정할 수 있습니다.
+      /ResetSkipPkgs		VSPackages에 추가된 모든 SkipLoading 태그를 지웁니다.
+      /Run			지정한 솔루션을 컴파일하고 실행합니다.
+      /RunExit		지정한 솔루션을 컴파일하고 실행한 다음, IDE를 닫습니다.
+      /SafeMode		최소 창을 로드하는 안전 모드에서 IDE를 시작합니다.
+      /Upgrade		프로젝트 또는 솔루션과 그 안에 포함된 모든 프로젝트를 업그레이드합니다.
+      			이러한 파일의 백업은 적절히 만들어집니다.
+      			백업 프로세스에 대한 자세한 내용은 'Visual Studio 변환 마법사'
+      			도움말을 참조하세요.
+      
+      제품별 스위치:
+      
+      /debugexe	지정한 실행 파일을 디버깅하도록 엽니다.
+      		명령줄의 나머지가 이 실행 파일에 인수로 전달됩니다.
+      /diff		두 파일을 비교합니다. 4개의 매개 변수가 필요합니다.
+      		SourceFile, TargetFile, SourceDisplayName(선택 사항),
+      		TargetDisplayName(선택 사항)
+      /TfsLink	팀 탐색기를 열고 입력한 아티팩트 URI에 대해 
+      		뷰어를 시작합니다(등록된 경우).
+      /useenv		VC++ 빌드에 IDE 경로 대신
+      		PATH, INCLUDE, LIBPATH 및 LIB 환경 변수를 사용합니다.
+      
+      명령줄에서 디버거를 연결하려면 다음 명령을 사용하세요. 
+      	VsJITDebugger.exe -p <pid>
+      
+      
+...
