@@ -3,8 +3,19 @@ SET(ITEM_NAME   "app1")
 
 set(${ITEM_PREFIX}_SRC_${ITEM_NAME}
     ##.... Wrapper Module of EaFort
-    src/glbApp1.F90
-    src/appApp1.F90
+    src/eze1z.f90
+    src/force.f90
+    src/global.f90
+    src/kochin.f90
+    src/main.f90
+    src/motion.f90
+    src/offset.f90
+    src/parameters.f90
+    src/sdcal.f90
+    src/sdsup.f90
+    src/solve.f90
+    src/trcoef.f90
+    src/zswweep.f90
 )
 
 ##... Compile
