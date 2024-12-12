@@ -21,7 +21,7 @@ cmake_minimum_required(VERSION 2.9 FATAL_ERROR)
 project(FortranProjectBase)
 
 ##... Set Default Fortran Compiler & Eable the Fortran Compilation Environment
-enable_language(Fortran)
+#enable_language(Fortran)
 if (NOT DEFINED CMAKE_Fortran_COMPILER)
     set(CMAKE_Fortran_COMPILER gfortran)
 endif()
